@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.scp.student.student.student" table="student_details">
+        <id name="stdId" type="int">
+        			<column name="std_id" />
+        </id>
+        <property name="stdName" type="java.lang.String">
+            <column name="std_name" />
+        </property>
+        <property name="department" type="java.lang.String">
+            <column name="dept_Name" />
+        </property>
+        <property name="age" type="int">
+        	<column name="std_age" />
+        </property>
+    </class>
+</hibernate-mapping>
